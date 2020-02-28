@@ -2,5 +2,5 @@
     <string name="app_name">FamilySharedActivities</string>
     <string name="login">LOGIN</string>
     <string name="password">PASSWORD</string>
-    <string name="errorEntry">Неправильно введен логин\пароль</string>
+    <string name="errorEntry">OBLIVION</string>
 </resources>
