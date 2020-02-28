@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Моника"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:textColor="#030303"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="16dp"
+        android:text="Забыли пароль?"
+        android:textColor="#0A0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968" />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Войти"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/errorMessage"
+        app:layout_constraintStart_toStartOf="@+id/errorMessage"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="211dp"
+        android:layout_height="53dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/login"
+        android:inputType="textEmailAddress"
+        android:padding="2dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="211dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="212dp"
+        android:layout_height="16dp"
+        android:text="@string/errorEntry"
+        android:textColor="#A80606"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.55" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
